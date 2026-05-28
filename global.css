@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;  
+}
+
+@font-face {
+    font-family:"Icomoon" ;
+    src: url("icomoon.ttf");
+}
+
+header{
+    top: 0;
+    position: sticky;
+    width: 22%;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coluna-lateral {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    border-right: 1px solid #eeeeee;
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    z-index: 100;
+}
+
+.foto-perfil {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+}
+
+.coluna-lateral h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.lista-links {
+    list-style: none;
+    text-align: center;
+}
+
+.lista-links li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.letrasG:hover::after{
+    transform: scale(1);
+    visibility: visible;
+}
+
+.letrasG {
+    font-weight: 700;
+}
+
+.letrasG::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    transform: scale(0);
+    background-color: #000;
+    transition: all ease 0.5s;
+}
+
+.lista-links a {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 900;
+    text-decoration: none;
+    color: #00000069;
+    font-size: 14px;
+
+}
+
+.lista-links a.ativo{
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.lista-links a:hover{
+    color: #000;
+    transition: color 0.4s ease;
+}
+
+.lista-links li a{
+    font-weight: bold;
+    position: relative; 
+}
+
+.lista-links li a::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    bottom: -5px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(0, 0, 0);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+#rodape-principal {
+    margin-left: 22%;
+    width: 78%;
+    background-color: #1a1a1a;
+    color: #808080;
+    font-family: Arial, sans-serif;
+    padding: 60px 0 30px 0;
+    font-size: 14px;
+}
+
+#container-rodape {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.coluna-rodape {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 40px;
+    padding: 0 15px;
+}
+
+.coluna-rodape h3 {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+
+#grade-fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 250px;
+}
+
+#grade-fotos img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+#menu-arquivos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-arquivos li {
+    border-bottom: 1px solid #262626;
+    padding: 12px 0;
+}
+
+#menu-arquivos a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    transition: color 0.3s;
+}
+
+
+#menu-arquivos span {
+    color: white;
+}
+
+#coluna-contato {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 40px;
+  padding: 0 15px;
+  font-family: Arial, sans-serif;
+}
+
+#coluna-contato h3 {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+
+.item-contato {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.icone-contato {
+  width: 16px;
+  height: 16px;
+  margin-right: 15px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.item-contato p {
+  margin: 0;
+  line-height: 1.6;
+    color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+#ativado{
+    color: white;
+}
+
+
+#barra-direitos {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    font-size: 13px;
+    color: #666666;
+    width: 100%;
+}
+
+
+

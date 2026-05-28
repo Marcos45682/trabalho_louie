@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;  
+}
+
+@font-face {
+    font-family:"Icomoon" ;
+    src: url("icomoon.ttf");
+}
+
+header{
+    top: 0;
+    position: sticky;
+    width: 22%;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coluna-lateral {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    border-right: 1px solid #eeeeee;
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    z-index: 100;
+}
+
+.foto-perfil {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+}
+
+.coluna-lateral h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.lista-links {
+    list-style: none;
+    text-align: center;
+}
+
+.lista-links li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.letrasG:hover::after{
+    transform: scale(1);
+    visibility: visible;
+}
+
+.letrasG {
+    font-weight: 700;
+}
+
+.letrasG::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    transform: scale(0);
+    background-color: #000;
+    transition: all ease 0.5s;
+}
+
+.lista-links a {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 900;
+    text-decoration: none;
+    color: #00000069;
+    font-size: 14px;
+
+}
+
+.lista-links a.ativo{
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.lista-links a:hover{
+    color: #000;
+    transition: color 0.4s ease;
+}
+
+.lista-links li a{
+    font-weight: bold;
+    position: relative; 
+}
+
+.lista-links li a::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    bottom: -5px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(0, 0, 0);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+
+
+.bloco-principal {
+    display: flex;
+    width: 78%;
+   
+}
+
+.banner-foto {
+    width: 50%;
+    height: 100vh;
+    background-image: url('img/foto-fotografo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}   
+
+.painel-texto {
+    flex: 1;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.saudacao {
+    top: 40%;
+    color: rgb(191, 191, 191);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 43.2px;
+    text-align: left;
+}
+
+.titulo-principal {
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    margin: 20px 0;
+}
+
+.destaque {
+    font-family: "Poppins", sans-serif;
+    color: rgb(204, 183, 143);
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.descricao {
+    color: rgb(153, 153, 153);
+    font-family: "Montserrat", sans-serif;
+    line-height: 32.4px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.assinatura {
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 40px;
+    color: #333;
+}
+
+.texto-fundo{
+    position: relative;
+    top: 4%;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 1px;
+    left: -6px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.08);
+    white-space: nowrap;
+    z-index: 1;
+    user-select: none;
+}
+
+
+.redes-sociais a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.icone-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+.icone-social img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+}
+.secao-instagram {
+    display: block;
+    width: 72%;
+    margin-left: 22%;
+    
+    padding: 60px 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.titulo-instagram {
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.grade-fotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 90%;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    gap: 0;
+}
+
+.container-foto {
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.foto-principal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.camada-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.icone-insta {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.container-foto:hover .camada-hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .grade-fotos {
+        flex-wrap: wrap;
+        width: 95%;
+    }
+    .container-foto {
+        flex: 1 0 33.33%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-foto {
+        flex: 1 0 50%;
+    }
+}
+
+#rodape-principal {
+    margin-left: 22%;
+    width: 78%;
+    background-color: #1a1a1a;
+    color: #808080;
+    font-family: Arial, sans-serif;
+    padding: 60px 0 30px 0;
+    font-size: 14px;
+}
+
+#container-rodape {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.coluna-rodape {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 40px;
+    padding: 0 15px;
+}
+
+.coluna-rodape h3 {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+
+#grade-fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 250px;
+}
+
+#grade-fotos img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+#menu-arquivos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-arquivos li {
+    border-bottom: 1px solid #262626;
+    padding: 12px 0;
+}
+
+#menu-arquivos a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    transition: color 0.3s;
+}
+
+
+#menu-arquivos span {
+    color: white;
+}
+
+#coluna-contato {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 40px;
+  padding: 0 15px;
+  font-family: Arial, sans-serif;
+}
+
+#coluna-contato h3 {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+
+.item-contato {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.icone-contato {
+  width: 16px;
+  height: 16px;
+  margin-right: 15px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.item-contato p {
+  margin: 0;
+  line-height: 1.6;
+    color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+#ativado{
+    color: white;
+}
+
+
+#barra-direitos {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    font-size: 13px;
+    color: #666666;
+    width: 100%;
+}
+
+.txtnew{
+    margin-top: 40%;
+    text-align: center;
+}
+
+.newsletter{
+    text-align: center;
+    padding-top: 45%;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.form{
+    display: flex;
+}
+
+.email{
+    display: block;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #ece4d5;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+}
+
+.divicone{
+    display: flex;
+}
+
+.icone{
+    border-left: none;
+    border: 1px solid #ece4d5;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
